@@ -7788,8 +7788,12 @@ button.bg-dark:focus {
   position: sticky !important;
 }
 
+@media (min-width: 930px){
+  .fixed-top{position: fixed;}
+}
+
 .fixed-top {
-  position: fixed;
+
   top: 0;
   right: 0;
   left: 0;
