@@ -24,7 +24,14 @@
 </script> <br>
 
 
-
+<script>
+    $(window).on('load', function () {
+    $preloader = $('.preloader'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut(22000);
+    $preloader.delay(4000).fadeOut('slow');
+  });
+</script>
 
 
 
@@ -327,7 +334,6 @@ font-size:11px;" ><img src="img/1.gif" style=" height: 35px;"></div>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js."></script>
-    <script src="js/preloader.js."></script>
   
 
 </body></html>
