@@ -265,19 +265,50 @@ $(document).ready(function(){
 
 <style type="text/css">@media (max-width: 400px){#sal:{margin-top: 150px}}</style>
 <section id="contact">
-<div id="sal" class="row" style="height: 100vh; min-height: 40rem; padding-top: 72px; padding-bottom: 0;">
+<form>
+  <div class="row" style="height: 100vh; min-height: 50rem; padding-top: 72px; padding-bottom: 0;">
     <div class="form-group col-md-2">
  
     </div>
 
     <div class="form-group col-md-8">
-
+      <h4 style="text-align: center; margin-bottom: 60px; margin-top: 35px;">Website development</h4>
+ <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Surname</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Surname">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">First name</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="First name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Email</label>
+      <input type="text" placeholder="Email" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputState">Type of service</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+  <div class="form-group col-md-12">
+    <label for="exampleFormControlTextarea1">Comments</label> 
+    <textarea class="form-control" id="typed6" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-outline-info">Send a request</button>
+</form>
     </div>
 
     <div class="form-group col-md-2">
  
     </div>
   </div>
+</form>
   </section>
 
 
