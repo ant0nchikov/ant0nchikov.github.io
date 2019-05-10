@@ -278,7 +278,7 @@ $(document).ready(function(){
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">First name</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="First name">
+      <input type="email" class="form-control" id="inputPassword4" placeholder="First name">
     </div>
   </div>
   <div class="form-row">
@@ -295,9 +295,21 @@ $(document).ready(function(){
     </div>
   <div class="form-group col-md-12">
     <label for="exampleFormControlTextarea1">Comments</label> 
-    <textarea class="form-control" id="typed6" rows="3"></textarea>
+    <textarea  id="typed6" class="form-control" id="typed6" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-outline-info" style="margin-left: 5px;">Send a request</button>
+
+    <script>
+  var typed4 = new Typed('#typed6', {
+    strings: ['', 'Good afternoo! I want to use your services of a web developer!', 'I need a business card on the Internet for my business!', 'I need a website!'],
+    typeSpeed: 30,
+    backSpeed: 5,
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: true,
+    cursorChar: ''
+  });
+  </script>
 </form>
     </div>
 
