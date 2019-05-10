@@ -271,7 +271,7 @@ $(document).ready(function(){
 
     <div class="form-group col-md-8">
       <h4 style="text-align: center; margin-bottom: 60px; margin-top: 35px;">Contact form</h4>
- <form id="modal_2" action="/add_books">
+ <form id="modal_2" action="mail.php" method="POST">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Surname</label>
@@ -301,20 +301,21 @@ $(document).ready(function(){
   <button name="submit" type="submit" class="btn btn-outline-info" style="margin-left: 5px;">Send a request</button>
 
   <script>
-    $(document).ready(function() {
+$(document).ready(function() {
 
   $("#modal_2").submit(function() {
-    var th = $(this);
     $.ajax({
       type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
+      url: "mail.php",
+      data: $(this).serialize()
     }).done(function() {
-      alert("Thank you!");
+      $(this).find("input").val("");
+      alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+      $("#modal_2").trigger("reset");
     });
     return false;
   });
-
+  
 });
   </script>
 
