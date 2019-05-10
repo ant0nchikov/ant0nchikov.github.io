@@ -300,24 +300,6 @@ $(document).ready(function(){
   </div>
   <button name="submit" type="submit" class="btn btn-outline-info" style="margin-left: 5px;">Send a request</button>
 
-  <script>
-$(document).ready(function() {
-
-  $("#modal_2").submit(function() {
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize()
-    }).done(function() {
-      $(this).find("input").val("");
-      alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-      $("#modal_2").trigger("reset");
-    });
-    return false;
-  });
-  
-});
-  </script>
 
     <script>
   var typed6 = new Typed('#typed6', {
