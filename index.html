@@ -273,35 +273,52 @@ $(document).ready(function(){
 
     <div class="form-group col-md-8">
       <h4 style="text-align: center; margin-bottom: 60px; margin-top: 35px;">Website development</h4>
- <form  action="https://formspree.io/4epha9l.ukpa@gmail.com" method="POST">
-  <div class="form-row">
+      <form action="https://formspree.io/4epha9l.ukpa@gmail.com" method="POST">
+<div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Surname</label>
-      <input name="Surname" type="text" class="form-control" id="inputEmail4" placeholder="Surname" required>
+      <input type="Name" name="Surname" class="form-control" id="inputName4" placeholder="Surname" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputPassword4">First name</label>
-      <input type="text" name="First name" class="form-control" id="inputPassword4" placeholder="First name" required>
+      <label for="inputEmail4">First name</label>
+      <input type="Name" name="First name" class="form-control" id="inputName4" placeholder="First name" required>
     </div>
-  </div>
-  <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">Email</label>
-      <input name="Email" type="email" placeholder="Email" class="form-control" id="inputCity" required>
+      <label for="inputPassword4">Email</label>
+      <input type="Email" name="Email"  class="form-control" id="inputEmail4" placeholder="Email" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputState">Type of service</label>
-      <select name="Type of service" id="inputState" class="form-control">
+      <select id="inputState" name="Type of service" class="form-control" >
         <option selected>Choose...</option>
         <option>...</option>
       </select>
     </div>
-  <div class="form-group col-md-12">
-    <label for="exampleFormControlTextarea1">Comments</label> 
-    <textarea name="Comments" class="form-control" id="typed6" rows="3" required></textarea>
   </div>
-  <button type="submit">Send a request</button>
+     <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comments</label> 
+    <textarea class="form-control" name="Comments" id="typed5" rows="3" required></textarea>
+  </div>
+
+  <script>
+  var typed4 = new Typed('#typed5', {
+    strings: ['', 'Good afternoo! I want to use your services of a web developer!', 'I need a business card on the Internet for my business!', 'I need a website!'],
+    typeSpeed: 30,
+    backSpeed: 5,
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: true,
+    cursorChar: ''
+  });
+  </script>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="sumbit" class="btn btn-outline-info" style="border-color: black; color: black; background-color: #00FF00; font-weight: bold; ">Send a request</button>
+      </div>
 </form>
+
     </div>
 
     <div class="form-group col-md-2">
