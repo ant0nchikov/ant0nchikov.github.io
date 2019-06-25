@@ -31,7 +31,7 @@ html {
  	margin-left: 1px;
  }
 
- @media (min-height: 560px){footer{position: fixed; margin-top: 10px}}
+ @media (min-height: 560px){footer{position: absolute;}}
 
  @media (max-height: 560px){footer{margin-top:  20px}}
 
