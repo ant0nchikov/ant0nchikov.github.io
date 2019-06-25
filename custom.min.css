@@ -29,7 +29,10 @@ html {
  footer{
  	bottom: 0px;
  	margin-left: 1px;
- 	position:fixed;
- 	position:absolute;
-
  }
+
+ @media (min-height: 560px){footer{position: fixed; margin-top: 10px}}
+
+ @media (max-height: 560px){footer{margin-top:  20px}}
+
+
