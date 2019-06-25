@@ -30,4 +30,6 @@ html {
  	bottom: 0px;
  	margin-left: 1px;
  	position:fixed;
+ 	position:absolute;
+
  }
