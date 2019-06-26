@@ -12,7 +12,7 @@
     <script defer src="awall.min.js"></script>
   </head>
   <body>
-    <div class="preloader"><div class="loader"><h6 style= "color: #00FF00; font-family: 'Aldrich', sans-serif;">root@ant0nchikov: <span id="typed"></span> 
+   <!--  <div class="preloader"><div class="loader"><h6 style= "color: #00FF00; font-family: 'Aldrich', sans-serif;">root@ant0nchikov: <span id="typed"></span> 
 
 <script>
   var typed = new Typed('#typed', {
@@ -33,7 +33,7 @@
   });
 </script>
 </h6>
-</div></div> 
+</div></div>  -->
 
 
 <div class="container">
@@ -54,7 +54,7 @@
 
      <div class="row">
      <div class="col-12" style="text-align: center; margin-top: 10px; font-family: 'Aldrich', sans-serif;">
-     <div class="col">
+     <div class="col" style="    color: lime;">
 
            <span id="AZA" style= "font-size: 14px; color: #00FF00; font-family: 'Aldrich', sans-serif;"></span>
  <script>
@@ -75,11 +75,11 @@
 <div class="container">
 <div class="row" id="was" style="text-align: center;  font-family: 'Aldrich', sans-serif;">
   <div class="col-xs-12 col-sm-4" id="was1"><h4 style=" margin-top: 40px;
-"><a href="#">Completed work</a></h4></div>
+"><a href="#largeModal" data-toggle="modal">Completed work</a></h4></div>
   <div class="col-xs-12 col-sm-4"><h4 style="  margin-top: 40px;
-"><a href="#">Price list</a></h4></div> 
+"><a href="#largeModal2" data-toggle="modal">Price list</a></h4></div> 
 <div class="col-xs-12 col-sm-4"><h4 style="  margin-top: 40px;
-"><a href="#">Feedback</a></h4></div> 
+"><a href="#largeModal3" data-toggle="modal">Feedback</a></h4></div> 
 </div>
 </div>
 <style type="text/css">@media (min-width: 600px){#was{margin-top: 130px}}</style>
@@ -90,12 +90,137 @@
 
 </style>
 
+
+<!-- modal -->
+    <div id="largeModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="  border-color:lime;">
+                <div class="modal-header" style="    border-color: lime;">
+                    <h4 class="modal-title" style="color: #00FF00; font-family: 'Aldrich', sans-serif; ">Completed work</h4>
+                </div>
+                <div class="modal-body">
+                    Содержимое модального окна...
+                </div>
+                <div class="modal-footer" style="    border-color: lime;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="largeModal2" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content"  style="  border-color:lime;">
+                <div class="modal-header" style="    border-color: lime;">
+                    <h4 class="modal-title" style="color: #00FF00; font-family: 'Aldrich', sans-serif; ">Price list</h4>
+                </div>
+                <div class="modal-body">
+                    Содержимое модального окна...
+                </div>
+                <div class="modal-footer" style="    border-color: lime;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="largeModal3" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content"  style="  border-color:lime;">
+                <div class="modal-header" style="    border-color: lime">
+                    <h4 class="modal-title" style="color: #00FF00; font-family: 'Aldrich', sans-serif; ">Feedback</h4>
+                </div>
+                <div class="modal-body">
+                     <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Surname</label>
+      <input type="text" name="Surname" class="form-control" placeholder="Surname" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>First name</label>
+      <input type="text" name="First name" class="form-control" placeholder="First name" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Email</label>
+      <input type="email" name="Email" placeholder="Email" class="form-control" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Mobile number</label>
+    <input type="mobile" name="mobile" placeholder="Your mobile number" class="form-control" required>
+    </div>
+  <div class="form-group col-md-12">
+    <label>Comments</label> 
+    <textarea class="form-control" name="Comments" id="typed6" rows="3" required></textarea>
+  </div></div>
+                </div>
+                <div class="modal-footer" style="    border-color: lime;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 <div class="container" id="was3" style=" margin-top: 45px;">
 <div class="row">
   <div class="col-12"><h4 style=" text-align: center";> 
-<a href="#" style="color: black; text-decoration-color:#00FF00; background-color:#00FF00;">Oder here</a></h4></div>
+<a href="#myModal4" data-toggle="modal" style="color: black; text-decoration-color:#00FF00; background-color:#00FF00;">
+Make an order</a></h4></div>
 </div>
 </div>
+
+
+    <div id="myModal4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content"  style="  border-color:lime;">
+                <div class="modal-header" style="    border-color: lime;">
+                    <h4 class="modal-title" style="color: #00FF00; font-family: 'Aldrich', sans-serif; ">Order formalization</h4>
+                </div>
+                <div class="modal-body">
+                                         <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Surname</label>
+      <input type="text" name="Surname" class="form-control" placeholder="Surname" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>First name</label>
+      <input type="text" name="First name" class="form-control" placeholder="First name" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Email</label>
+      <input type="email" name="Email" placeholder="Email" class="form-control" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Mobile number</label>
+    <input type="mobile" name="mobile" placeholder="Your mobile number" class="form-control" required>
+    </div>
+    <div class="form-group col-md-12">
+    <select name="Type of service" id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+  <div class="form-group col-md-12">
+    <label>Comments</label> 
+    <textarea class="form-control" name="Comments" id="typed6" rows="3" required></textarea>
+  </div></div>
+                </div>
+                <div class="modal-footer" style="    border-color: lime;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="  cursor: url(img/cursor-1.cur), default;background-color: black;border-color: lime;color: lime; font-family: 'Aldrich', sans-serif;">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
