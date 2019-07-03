@@ -13,4 +13,9 @@ pre{background:#f7f7f9}@media (min-width: 768px){body>.navbar-transparent{box-sh
  @media (max-height: 560px){footer{margin-top:  30px}}
 
  
+ .spoiler-content{
+display:none;  /**скрываем блок контента спойлера**/
+padding:15px 20px; /**добавляем внутренний отступ**/
+}
 
+h4{color: lime;}
