@@ -30,3 +30,17 @@ h4{color: lime;}
 #pup::-webkit-scrollbar-thumb {
   background-color: lime;
 }
+
+
+#scroll1::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+
+ 
+#scroll2::-webkit-scrollbar-thumb {
+  background-color: lime;
+}
+
+
+
